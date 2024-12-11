@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="sign up.css" />
+  </head>
+  <body>
+    <div class="main" id="main-Box-SignUp">
+      <div class="main-container">
+        <div class="container-one">
+          <div class="container">
+            <h2>Create Your Account:</h2>
+            <form onsubmit="toSubmit(event)">
+              <div class="inp-Box">
+                <input
+                  type="text"
+                  name="user"
+                  id="signUp-name"
+                  placeholder="User Name"
+                  oninput="signUpValidate(event, 'user')"
+                  required
+                />
+              </div>
+              <span class="span" id="span-user">abc</span>
+
+              <div class="inp-Box">
+                <input
+                  type="email"
+                  name="email"
+                  id="signUp-email"
+                  placeholder="Email Address"
+                  oninput="signUpValidate(event, 'email')"
+                  required
+                />
+              </div>
+              <span class="span" id="span-email">abc</span>
+
+              <div class="inp-Box">
+                <input
+                  type="password"
+                  name="password"
+                  id="signUp-password"
+                  placeholder="Your Password"
+                  oninput="signUpValidate(event, 'password')"
+                  required
+                />
+              </div>
+              <span class="span" id="span-password">abc</span>
+              
+              <select name="" id="dropDown">
+                <option value="empty">Select Your City</option>
+                <option value="kar">Karachi</option>
+                <option value="isl">Islamabad</option>
+                <option value="lah">Lahore</option>
+                <option value="que">Quetta</option>
+              </select>
+
+              <div class="inp-Box">
+                <input id="sub" type="submit" value="Create..." />
+              </div>
+            </form>
+            <h3>If You Already Have An Account So..</h3>
+            <a href="../index.html">LOGIN IN</a>
+          </div>
+        </div>
+        <div class="container-two"><img src="../images/4.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <script src="sign up.js"></script>
+  </body>
+</html>

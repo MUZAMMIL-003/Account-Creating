@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main" id="main-Box-Login">
+      <div class="main-Container-one">
+        <div class="container-one">
+        <div class="container">
+            <h2>LOGIN YOUR ACCOUNT</h2>
+          <form onsubmit="toCheckLogin(event)">
+            <div class="inp-Box">
+              <input
+                type="text"
+                name="email"
+                id="login-email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <br>
+
+            <div class="inp-Box">
+              <input
+                type="password"
+                name="password"
+                id="login-password"
+                placeholder="Your Password"
+                oninput="loginValidate(event)"
+                required
+              />
+            </div>
+            <span class="span" id="span-password">abc</span>
+
+            <div class="inp-Box">
+              <input id="sub" type="submit" value=" SUBMIT" placeholder="SUBMIT" >
+            </div>
+          </form>
+          <h3>Create Your New Account :</h3>
+          <a href="./sign up/sign up.html">SIGN UP</a>
+        </div>
+    </div>
+        <div class="container-two">
+            <img src="./images/1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script src="App.js"></script>
+  </body>
+</html>
